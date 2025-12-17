@@ -1,0 +1,7 @@
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#667eea">
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(reg => console.log("Service Worker registered"))
+    .catch(err => console.log("SW registration failed", err));
+}
